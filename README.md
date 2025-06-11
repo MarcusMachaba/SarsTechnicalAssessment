@@ -5,7 +5,7 @@
 * **Backend** — .NET 8 class library (`Sars.Rpn`) with xUnit tests  
 * **Misc** — Fluent icons via `lucide-react`, MSBuild composite builds, project-level analyzers  
 
-> **Clone • Install • Run** – the whole solution spins up in **< 30 seconds** on any machine with Node ≥ 18 and .NET SDK ≥ 8.
+> **Clone • Install • Run** – the whole solution spins up in **< 60 seconds** on any machine with Node ≥ 18 and .NET SDK ≥ 8.
 
 ---
 
