@@ -1,8 +1,10 @@
-﻿using System;
+﻿using System.Linq;
 
-public class Class1
+public class RiskEngine
 {
-	public Class1()
-	{
-	}
+    public string Parse(string input)
+    {
+        string[] parts = input.Split(' ');
+        return string.Join(",", parts.Reverse());
+    }
 }
