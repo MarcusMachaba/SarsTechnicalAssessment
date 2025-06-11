@@ -35,7 +35,7 @@
 │   ├── cs-refactor.cs
 │   └── README.md
 │
-└── Directory.Build.props     # nullable + analyzer rules for all C# projects
+└── Directory.Build.props    # nullable + analyzer rules for all C# projects
 ```                                                      
 
 ---
@@ -78,10 +78,10 @@ dotnet run             # interactive RPN REPL
 
 ## ⚖️ Unit-test matrix (backend)
 
-| File                         | Scenario tested                                                          |
-|------------------------------|--------------------------------------------------------------------------|
-| `InfixConverterTests.cs`     | simple add, precedence, decimals, invalid token, insufficient operands   |
-| `EvaluatorTests.cs` *(bonus)*| multi-operator expression vs expected numeric result                     |
+| File                                    | Scenario tested                                                          |
+|-----------------------------------------|--------------------------------------------------------------------------|
+| `InfixConverterTests.cs`                | simple add, precedence, decimals, invalid token, insufficient operands   |
+| `EvaluatorTests.cs` *(additional bonus)*| multi-operator expression vs expected numeric result                     |
 
 ```bash
 # Run everything with coverage
@@ -94,10 +94,10 @@ Coverlet collector is pre-installed; use ReportGenerator for HTML reports if des
 
 ## 📝 Part 3 – Code-Review & Refactor
 
-| Language    | Before                                               | After                                                |
-|-------------|------------------------------------------------------|------------------------------------------------------|
-| JavaScript  | [`code-review/js-original.js`](code-review/js-original.js) | [`code-review/js-refactor.js`](code-review/js-refactor.js) |
-| C#          | [`code-review/cs-original.cs`](code-review/cs-original.cs) | [`code-review/cs-refactor.cs`](code-review/cs-refactor.cs) |
+| Language    | Before                                                     | After                                                |
+|-------------|------------------------------------------------------------|------------------------------------------------------|
+| JavaScript  | [`code-review/js-original.js`](code-review/js_original.js) | [`code-review/js-refactor.js`](code-review/js_refactor.js) |
+| C#          | [`code-review/cs-original.cs`](code-review/cs_original.cs) | [`code-review/cs-refactor.cs`](code-review/cs_refactor.cs) |
 
 See **[`code-review/README.md`](code-review/README.md)** for a point-by-point rationale of the improvements.
 
