@@ -12,14 +12,14 @@
 ## 📁 Repository layout
 
 ```text
-├── backend/
+├── backend/				 # Part 2: C# Application (Backend / Logic)
 │   ├── Sars.Rpn/            # core library
 │   └── Sars.Rpn.Tests/      # xUnit tests
 │
 ├── console/
 │   └── Rpn.Runner/          # demo REPL for quick manual checks
 │
-├── frontend/
+├── frontend/				 # Part 1: ReactJS Application (Frontend)
 │   └── reactapp_frontend/   # Vite React 18 + Tailwind app
 │       ├── src/
 │       │   ├── components/
@@ -27,6 +27,13 @@
 │       │   └── ...
 │       ├── tailwind.config.js
 │       └── tsconfig.*.json
+│
+├── code-review/             # Part 3 – refactor & rationale/reasoning
+│   ├── js-original.js
+│   ├── js-refactor.js
+│   ├── cs-original.cs
+│   ├── cs-refactor.cs
+│   └── README.md
 │
 └── Directory.Build.props    # nullable + analyzer rules for all C# projects
 ```                                                      
@@ -81,3 +88,40 @@ dotnet run             # interactive RPN REPL
 dotnet test --collect:"XPlat Code Coverage"
 
 Coverlet collector is pre-installed; use ReportGenerator for HTML reports if desired.
+```
+
+---
+
+## 📝 Part 3 – Code-Review & Refactor
+
+| Language    | Before                                               | After                                                |
+|-------------|------------------------------------------------------|------------------------------------------------------|
+| JavaScript  | [`code-review/js-original.js`](code-review/js-original.js) | [`code-review/js-refactor.js`](code-review/js-refactor.js) |
+| C#          | [`code-review/cs-original.cs`](code-review/cs-original.cs) | [`code-review/cs-refactor.cs`](code-review/cs-refactor.cs) |
+
+See **[`code-review/README.md`](code-review/README.md)** for a point-by-point rationale of the improvements.
+
+---
+
+## 🖥 Console RPN runner
+
+```text
+Reverse-Polish Calculator
+Type an RPN expression and press <Enter>.
+Type EXIT (or just press <Enter>) to quit.
+
+> 3 4 5 * +
+Infix  : (3 + (4 * 5))
+Result : 23
+
+> exit
+Good-bye!
+```
+
+---
+
+## 🔍 Code style & safety
+
+* **C#** Nullable reference types **enabled** (`<Nullable>enable`) and the latest Roslyn analyzers (`<AnalysisLevel>latest`) via **`Directory.Build.props`**.  
+* **TypeScript** Compiler in **strict** mode with `exactOptionalPropertyTypes`, `noUnusedLocals`, `noUnusedParameters`, etc.  
+* **ESLint** Rule-set drawn from **eslint**, **@typescript-eslint**, and **eslint-plugin-react-hooks** for consistent React-specific best practices.
