@@ -428,6 +428,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+bin
 *.local
 
 # Editor directories and files
