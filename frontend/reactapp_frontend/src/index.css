@@ -4,10 +4,10 @@
 
 /* Optional scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: theme('colors.indigo.300'); /* add quotes */
-  border-radius: 4px;
+    background-color: theme('colors.indigo.300'); /* add quotes */
+    border-radius: 4px;
 }
