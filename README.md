@@ -106,8 +106,8 @@ See **[`code-review/README.md`](code-review/README.md)** for a point-by-point ra
 ## 🖥 Console RPN runner
 
 ```text
-Reverse-Polish Calculator
-Type an RPN expression and press <Enter>.
+SARS Customs Risk Engine Reverse-Polish-Notation Calculator
+Type an RPN expression (space-delimited) and press <Enter>:
 Type EXIT (or just press <Enter>) to quit.
 
 > 3 4 5 * +
