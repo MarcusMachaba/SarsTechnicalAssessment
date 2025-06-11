@@ -96,8 +96,8 @@ Coverlet collector is pre-installed; use ReportGenerator for HTML reports if des
 
 | Language    | Before                                                     | After                                                |
 |-------------|------------------------------------------------------------|------------------------------------------------------|
-| JavaScript  | [`code-review/js-original.js`](code-review/js_original.js) | [`code-review/js-refactor.js`](code-review/js_refactor.js) |
-| C#          | [`code-review/cs-original.cs`](code-review/cs_original.cs) | [`code-review/cs-refactor.cs`](code-review/cs_refactor.cs) |
+| JavaScript  | [`code-review/js-original.js`](code-review/js_original.js) | [`code-review/js-refactored.js`](code-review/js_refactored.js) |
+| C#          | [`code-review/cs-original.cs`](code-review/cs_original.cs) | [`code-review/cs-refactored.cs`](code-review/cs_refactored.cs) |
 
 See **[`code-review/README.md`](code-review/README.md)** for a point-by-point rationale of the improvements.
 
