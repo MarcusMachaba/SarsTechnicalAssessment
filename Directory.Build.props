@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <!-- Use the newest C# features without editing every .csproj -->
+    <LangVersion>preview</LangVersion>
+
+    <!-- Enable nullable reference types solution-wide -->
+    <Nullable>enable</Nullable>
+
+    <!-- Turn on the latest analyzers/rules that ship with the compiler -->
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+</Project>
