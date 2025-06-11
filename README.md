@@ -12,15 +12,15 @@
 ## 📁 Repository layout
 
 ```text
-├── backend/				 # Part 2: C# Application (Backend / Logic)
-│   ├── Sars.Rpn/            # core library
-│   └── Sars.Rpn.Tests/      # xUnit tests
+├── backend/                 # Part 2: C# Application (Backend / Logic)
+│   ├── Sars.Rpn/              # core library
+│   └── Sars.Rpn.Tests/        # xUnit tests
 │
 ├── console/
-│   └── Rpn.Runner/          # demo REPL for quick manual checks
+│   └── Rpn.Runner/            # demo REPL for quick manual checks
 │
-├── frontend/				 # Part 1: ReactJS Application (Frontend)
-│   └── reactapp_frontend/   # Vite React 18 + Tailwind app
+├── frontend/                # Part 1: ReactJS Application (Frontend)
+│   └── reactapp_frontend/     # Vite React 18 + Tailwind app
 │       ├── src/
 │       │   ├── components/
 │       │   ├── hooks/
@@ -35,7 +35,7 @@
 │   ├── cs-refactor.cs
 │   └── README.md
 │
-└── Directory.Build.props    # nullable + analyzer rules for all C# projects
+└── Directory.Build.props     # nullable + analyzer rules for all C# projects
 ```                                                      
 
 ---
