@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+     /* —— Composite build essentials —— */
+    "composite": true,
+    "emitDeclarationOnly": true, //emit .d.ts, skip JS
+    "declarationDir": "dist/types-app",   // optional but keeps repo clean (keeps generated .d.ts files out of your src tree.)
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    /* Language / bundler targets */
+    "useDefineForClassFields": true,
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+
+    /* Hygiene & lint-like checks */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "skipLibCheck": true,
+  },
+  "include": ["src"]
+}
