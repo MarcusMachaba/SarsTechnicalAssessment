@@ -29,7 +29,7 @@
 │       └── tsconfig.*.json
 │
 └── Directory.Build.props    # nullable + analyzer rules for all C# projects
-```                                                      <!-- 👈 THIS closes the tree block -->
+```                                                      
 
 ---
 
@@ -52,3 +52,32 @@ dotnet test            # builds & runs all unit tests
 # --- Console demo ---
 cd ../../console/Rpn.Runner
 dotnet run             # interactive RPN REPL
+```
+
+---
+
+## 🎯 Key NPM/Yarn/PNPM scripts (frontend)
+
+| Script    | Purpose                                    |
+|-----------|--------------------------------------------|
+| `dev`     | Vite dev server with HMR                   |
+| `build`   | Type-check (`tsc -b`) + production bundle  |
+| `preview` | Serves the build output locally            |
+| `lint`    | ESLint + TypeScript rules                  |
+
+⚡ Add `--host` to `npm run dev` if you want LAN / mobile testing.
+
+---
+
+## ⚖️ Unit-test matrix (backend)
+
+| File                         | Scenario tested                                                          |
+|------------------------------|--------------------------------------------------------------------------|
+| `InfixConverterTests.cs`     | simple add, precedence, decimals, invalid token, insufficient operands   |
+| `EvaluatorTests.cs` *(bonus)*| multi-operator expression vs expected numeric result                     |
+
+```bash
+# Run everything with coverage
+dotnet test --collect:"XPlat Code Coverage"
+
+Coverlet collector is pre-installed; use ReportGenerator for HTML reports if desired.
