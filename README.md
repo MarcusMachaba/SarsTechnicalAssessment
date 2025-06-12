@@ -154,7 +154,7 @@ This tool accepts a comma-separated string of numbers and displays them in sorte
 | `Toggle switch`    | Clicking toggle swaps between ascending/descending order     |
 | `Long input`       | Input like `1000,999,...` → Handle performance and rendering |
 
-> 💡 *Consider using Jest and React Testing Library (RTL) for component/unit testing.*
+> 💡 *Can additionally use Jest and React Testing Library (RTL) for component/unit testing.*
 
 ---
 
@@ -181,4 +181,4 @@ This parser converts RPN expressions to human-readable infix notation and option
 | `Division by zero` | `4 0 /`             | Should handle gracefully or raise exception |
 | `Empty input`      | `""`                | Return "No expression provided"             |
 
-> 💡 *Use xUnit for unit tests. Cover edge cases for resilience.*
+> 💡 *Using xUnit for unit tests. Covers edge cases for resilience.*
