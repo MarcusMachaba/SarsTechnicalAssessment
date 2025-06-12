@@ -68,7 +68,7 @@ dotnet run             # interactive RPN REPL
 
 ```
 ### 1 Set multiple project startup
-![Visual-studio Multiple-startup](screenshots/test_results.PNG) 
+![Visual-studio Multiple-startup](screenshots/multiple_startup.PNG) 
 
 ### 2 Run/start the solution
 ![Visual-studio run/start debugging](screenshots/vs_start.PNG)
