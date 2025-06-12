@@ -16,6 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
 		README.md = README.md
+		SARS_Technical_Assessment_Revised.docx = SARS_Technical_Assessment_Revised.docx
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpn.Runner", "backend\Rpn.Runner\Rpn.Runner.csproj", "{44798429-1B26-458B-ACA0-93B79CEC1785}"
@@ -31,9 +32,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "code-review", "code-review"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenshots", "screenshots", "{63B703F7-BA86-40C4-A0CC-4DFBED28233B}"
 	ProjectSection(SolutionItems) = preProject
-		screenshots\console-demo.PNG = screenshots\console-demo.PNG
-		screenshots\react-sorting-ui.PNG = screenshots\react-sorting-ui.PNG
-		screenshots\test-results.PNG = screenshots\test-results.PNG
+		screenshots\console_demo.PNG = screenshots\console_demo.PNG
+		screenshots\multiple_startup.PNG = screenshots\multiple_startup.PNG
+		screenshots\react_sorting_ui.PNG = screenshots\react_sorting_ui.PNG
+		screenshots\test_results.PNG = screenshots\test_results.PNG
+		screenshots\vs_start.PNG = screenshots\vs_start.PNG
 	EndProjectSection
 EndProject
 Global

@@ -61,6 +61,18 @@ cd ../../console/Rpn.Runner
 dotnet run             # interactive RPN REPL
 ```
 
+```bash
+# Alternative is through visual studio 2022 on solution explorer - right-click solution & navigate to properties.
+# Then on the Properties popup page on Rpn.Runner & react_frontend projects set the Action to 'start' - then after that all you need to do is to just click the visual studio start button.
+# What that will do is it will run both the react-app & Rpn.Runner console demo app._
+
+### 1 Set multiple project startup
+![Visual-studio Multiple-startup](screenshots/test_results.PNG) 
+
+### 2 Run/start the solution
+![Visual-studio run/start debugging](screenshots/vs_start.PNG)
+```
+
 ---
 
 ## 🎯 Key NPM/Yarn/PNPM scripts (frontend)
