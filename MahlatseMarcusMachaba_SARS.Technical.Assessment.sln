@@ -29,6 +29,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "code-review", "code-review"
 		code-review\README.md = code-review\README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenshots", "screenshots", "{63B703F7-BA86-40C4-A0CC-4DFBED28233B}"
+	ProjectSection(SolutionItems) = preProject
+		screenshots\console-demo.PNG = screenshots\console-demo.PNG
+		screenshots\react-sorting-ui.PNG = screenshots\react-sorting-ui.PNG
+		screenshots\test-results.PNG = screenshots\test-results.PNG
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
