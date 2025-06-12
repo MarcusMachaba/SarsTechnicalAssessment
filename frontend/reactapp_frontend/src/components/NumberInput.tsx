@@ -19,8 +19,8 @@ export default function NumberInput() {
           <input
             value={raw}
             onChange={e => parse(e.target.value)}
-            className="mt-1 w-full rounded-lg border-gray-300 p-3 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-            placeholder="e.g. 10, 7.5, 42"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter comma-separated numbers (e.g. 10, 7.5, 42)"
           />
         </label>
 

@@ -182,3 +182,12 @@ This parser converts RPN expressions to human-readable infix notation and option
 | `Empty input`      | `""`                | Return "No expression provided"             |
 
 > 💡 *Using xUnit for unit tests. Covers edge cases for resilience.*
+
+---
+
+
+## 📬 Submission Info
+
+Submitted by: **Marcus Machaba**  
+GitHub: [@MarcusMachaba](https://github.com/MarcusMachaba)  
+Email: smaka1236@gmail.com  
