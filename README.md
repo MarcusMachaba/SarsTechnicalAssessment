@@ -188,13 +188,13 @@ This parser converts RPN expressions to human-readable infix notation and option
 ## 🖼 UI Preview
 
 ### React Sorting Interface
-![React UI](screenshots/react-sorting-ui.png)
+![React UI](screenshots/react__sorting_ui.PNG) 
 
 ### Console RPN Runner
-![Console Demo](screenshots/console-demo.png)
+![Console Demo](screenshots/console_demo.PNG)
 
 ### Unit Test Output
-![Test Results (RPN)](screenshots/test-results.png)
+![Test Results (RPN)](screenshots/test_results.PNG)
 
 ---
 
