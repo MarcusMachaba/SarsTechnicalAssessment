@@ -125,3 +125,60 @@ Good-bye!
 * **C#** Nullable reference types **enabled** (`<Nullable>enable`) and the latest Roslyn analyzers (`<AnalysisLevel>latest`) via **`Directory.Build.props`**.  
 * **TypeScript** Compiler in **strict** mode with `exactOptionalPropertyTypes`, `noUnusedLocals`, `noUnusedParameters`, etc.  
 * **ESLint** Rule-set drawn from **eslint**, **@typescript-eslint**, and **eslint-plugin-react-hooks** for consistent React-specific best practices.
+
+
+---
+
+## 🧪 Test Strategy
+
+### Part 1: ReactJS Application
+
+This tool accepts a comma-separated string of numbers and displays them in sorted order.
+
+**Testing Focus Areas:**
+
+- ✅ Input validation
+- ✅ Sorting logic
+- ✅ UI toggle behavior
+- ✅ Error message display
+
+**Test Scenarios:**
+
+| Test Case          | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| `Valid input`      | Input: `3,1,5` → Should render `[1, 3, 5]` and `[5, 3, 1]`   |
+| `Invalid input`    | Input: `2,a,4` → Show validation error                       |
+| `Whitespace input` | Input: `1 , 2 , 3` → Should still process correctly          |
+| `Decimal numbers`  | Input: `1.5, 2.3, 0.1` → Sorted accordingly                  |
+| `Empty input`      | Show "Please enter a value" or similar                       |
+| `Toggle switch`    | Clicking toggle swaps between ascending/descending order     |
+| `Long input`       | Input like `1000,999,...` → Handle performance and rendering |
+
+> 💡 *Consider using Jest and React Testing Library (RTL) for component/unit testing.*
+
+---
+
+### Part 2: C# RPN Parser
+
+This parser converts RPN expressions to human-readable infix notation and optionally evaluates them.
+
+**Testing Focus Areas:**
+
+- ✅ Parsing correctness and grouping
+- ✅ Operator precedence
+- ✅ Robust error handling
+- ✅ Result evaluation (bonus)
+
+**Test Scenarios:**
+
+| Test Case          | Input               | Expected Output                             |
+| ------------------ | ------------------- | ------------------------------------------- |
+| `Basic RPN`        | `3 4 +`             | Infix: `(3 + 4)`                            |
+| `Multi-operator`   | `5 1 2 + 4 * + 3 -` | `((5 + ((1 + 2) * 4)) - 3)`                 |
+| `Invalid input`    | `3 +`               | Throws or returns parse error               |
+| `Decimal support`  | `2.5 3.5 +`         | `(2.5 + 3.5)`                               |
+| `Evaluation`       | `3 4 5 * +`         | Infix: `(3 + (4 * 5))`, Result: `23`        |
+| `Division by zero` | `4 0 /`             | Should handle gracefully or raise exception |
+| `Empty input`      | `""`                | Return "No expression provided"             |
+
+> 💡 *Use xUnit for unit tests. Cover edge cases for resilience.*
